@@ -1431,5 +1431,5 @@ function NoteModal({ note, t, onClose, onSave, setNote }) {
 }
 
 export default function Root() {
-  return <BrowserRouter><App /></BrowserRouter>;
+  return <BrowserRouter basename={import.meta.env.BASE_URL}><App /></BrowserRouter>;
 }
